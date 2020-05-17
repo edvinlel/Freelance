@@ -28,6 +28,8 @@ class TaskContainerView: UIView {
     
     let taskTableView: UITableView = {
         let tableView = UITableView()
+        tableView.rowHeight = 100
+        tableView.separatorStyle = .none
         return tableView
     }()
     

@@ -91,6 +91,12 @@ class ProjectCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setTasks(tasks: Int, andDays days: Int) {
+        tasksRemaining.text = String(tasks)
+        numberOfDaysLabel.text = String(days)
+        
+    }
+    
     private func setConstraints() {
         
         // MARK: Tasks StackView

@@ -24,6 +24,11 @@
 		0682413F2470884B0013CC6B /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682413E2470884B0013CC6B /* ProjectCell.swift */; };
 		069336572471E5EF00B3DC06 /* Extension+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336562471E5EF00B3DC06 /* Extension+CALayer.swift */; };
 		069336592471EA4100B3DC06 /* TaskContainverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336582471EA4100B3DC06 /* TaskContainverView.swift */; };
+		0693365C2471F3BB00B3DC06 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693365B2471F3BB00B3DC06 /* TaskCell.swift */; };
+		0693365F2471F98700B3DC06 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693365E2471F98700B3DC06 /* Task.swift */; };
+		069336612471FA6000B3DC06 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336602471FA6000B3DC06 /* Project.swift */; };
+		069336632471FA8800B3DC06 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336622471FA8800B3DC06 /* File.swift */; };
+		069336652471FAAC00B3DC06 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336642471FAAC00B3DC06 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		0682413E2470884B0013CC6B /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		069336562471E5EF00B3DC06 /* Extension+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CALayer.swift"; sourceTree = "<group>"; };
 		069336582471EA4100B3DC06 /* TaskContainverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContainverView.swift; sourceTree = "<group>"; };
+		0693365B2471F3BB00B3DC06 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		0693365E2471F98700B3DC06 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		069336602471FA6000B3DC06 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		069336622471FA8800B3DC06 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		069336642471FAAC00B3DC06 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			children = (
 				068240F0246D2CB70013CC6B /* AppDelegate.swift */,
 				068240F2246D2CB70013CC6B /* SceneDelegate.swift */,
+				0693365D2471F97700B3DC06 /* Model */,
 				0682410B246D3CFC0013CC6B /* Views */,
 				06824105246D2FD60013CC6B /* Extensions */,
 				06824104246D2D860013CC6B /* HomeViewController */,
@@ -97,7 +108,6 @@
 				068240F4246D2CB70013CC6B /* HomeViewController.swift */,
 				06824136246E803C0013CC6B /* HomeView.swift */,
 				0682413A246E88270013CC6B /* HomeView+Constraints.swift */,
-				0682413E2470884B0013CC6B /* ProjectCell.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -117,11 +127,32 @@
 		0682410B246D3CFC0013CC6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0693365A2471F39C00B3DC06 /* Cells */,
 				0682410C246D3D1A0013CC6B /* CircularProgressView.swift */,
 				0682413C246FBEB60013CC6B /* NewTaskView.swift */,
 				069336582471EA4100B3DC06 /* TaskContainverView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0693365A2471F39C00B3DC06 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0682413E2470884B0013CC6B /* ProjectCell.swift */,
+				0693365B2471F3BB00B3DC06 /* TaskCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0693365D2471F97700B3DC06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0693365E2471F98700B3DC06 /* Task.swift */,
+				069336602471FA6000B3DC06 /* Project.swift */,
+				069336622471FA8800B3DC06 /* File.swift */,
+				069336642471FAAC00B3DC06 /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,17 +227,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				06824109246D33CE0013CC6B /* Extension+UIImage.swift in Sources */,
+				069336652471FAAC00B3DC06 /* Contact.swift in Sources */,
 				068240F5246D2CB70013CC6B /* HomeViewController.swift in Sources */,
 				069336592471EA4100B3DC06 /* TaskContainverView.swift in Sources */,
 				068240F1246D2CB70013CC6B /* AppDelegate.swift in Sources */,
+				0693365C2471F3BB00B3DC06 /* TaskCell.swift in Sources */,
 				0682410F246D40A20013CC6B /* Extensions+UIFont.swift in Sources */,
 				0682413D246FBEB60013CC6B /* NewTaskView.swift in Sources */,
+				069336632471FA8800B3DC06 /* File.swift in Sources */,
 				068240F3246D2CB70013CC6B /* SceneDelegate.swift in Sources */,
+				0693365F2471F98700B3DC06 /* Task.swift in Sources */,
 				06824137246E803C0013CC6B /* HomeView.swift in Sources */,
 				0682413F2470884B0013CC6B /* ProjectCell.swift in Sources */,
 				0682413B246E88270013CC6B /* HomeView+Constraints.swift in Sources */,
 				0682410D246D3D1A0013CC6B /* CircularProgressView.swift in Sources */,
 				06824107246D2FE70013CC6B /* Extensions+UIColor.swift in Sources */,
+				069336612471FA6000B3DC06 /* Project.swift in Sources */,
 				069336572471E5EF00B3DC06 /* Extension+CALayer.swift in Sources */,
 				06824139246E812F0013CC6B /* Extension+UIView.swift in Sources */,
 			);

@@ -21,6 +21,10 @@ class HomeViewController: UIViewController {
         homeView.projectCollectionView.register(ProjectCell.self, forCellWithReuseIdentifier: ProjectCell.identifier)
         homeView.projectCollectionView.delegate = self
         homeView.projectCollectionView.dataSource = self
+        
+        homeView.taskContainerView.taskTableView.register(TaskCell.self, forCellReuseIdentifier: TaskCell.identifier)
+        homeView.taskContainerView.taskTableView.delegate = self
+        homeView.taskContainerView.taskTableView.dataSource = self
     }
 
 
@@ -40,4 +44,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     
+}
+
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TaskCell.identifier, for: indexPath) as? TaskCell else {
+            return UITableViewCell()
+        }
+        
+        
+        
+        return cell
+    }
 }
