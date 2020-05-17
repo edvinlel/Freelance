@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		068240F1246D2CB70013CC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068240F0246D2CB70013CC6B /* AppDelegate.swift */; };
 		068240F3246D2CB70013CC6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068240F2246D2CB70013CC6B /* SceneDelegate.swift */; };
-		068240F5246D2CB70013CC6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068240F4246D2CB70013CC6B /* ViewController.swift */; };
+		068240F5246D2CB70013CC6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068240F4246D2CB70013CC6B /* HomeViewController.swift */; };
 		068240F8246D2CB70013CC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068240F6246D2CB70013CC6B /* Main.storyboard */; };
 		068240FA246D2CB90013CC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068240F9246D2CB90013CC6B /* Assets.xcassets */; };
 		068240FD246D2CB90013CC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068240FB246D2CB90013CC6B /* LaunchScreen.storyboard */; };
+		06824107246D2FE70013CC6B /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06824106246D2FE70013CC6B /* Extensions+UIColor.swift */; };
+		06824109246D33CE0013CC6B /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06824108246D33CE0013CC6B /* Extension+UIImage.swift */; };
+		0682410D246D3D1A0013CC6B /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682410C246D3D1A0013CC6B /* CircularProgressView.swift */; };
+		0682410F246D40A20013CC6B /* Extensions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682410E246D40A20013CC6B /* Extensions+UIFont.swift */; };
+		06824137246E803C0013CC6B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06824136246E803C0013CC6B /* HomeView.swift */; };
+		06824139246E812F0013CC6B /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06824138246E812F0013CC6B /* Extension+UIView.swift */; };
+		0682413B246E88270013CC6B /* HomeView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682413A246E88270013CC6B /* HomeView+Constraints.swift */; };
+		0682413D246FBEB60013CC6B /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682413C246FBEB60013CC6B /* NewTaskView.swift */; };
+		0682413F2470884B0013CC6B /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682413E2470884B0013CC6B /* ProjectCell.swift */; };
+		069336572471E5EF00B3DC06 /* Extension+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336562471E5EF00B3DC06 /* Extension+CALayer.swift */; };
+		069336592471EA4100B3DC06 /* TaskContainverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336582471EA4100B3DC06 /* TaskContainverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		068240ED246D2CB70013CC6B /* Freelance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freelance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068240F0246D2CB70013CC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068240F2246D2CB70013CC6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		068240F4246D2CB70013CC6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		068240F4246D2CB70013CC6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		068240F7246D2CB70013CC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		068240F9246D2CB90013CC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068240FC246D2CB90013CC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		068240FE246D2CB90013CC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06824106246D2FE70013CC6B /* Extensions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
+		06824108246D33CE0013CC6B /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		0682410C246D3D1A0013CC6B /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		0682410E246D40A20013CC6B /* Extensions+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIFont.swift"; sourceTree = "<group>"; };
+		06824136246E803C0013CC6B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		06824138246E812F0013CC6B /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		0682413A246E88270013CC6B /* HomeView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+Constraints.swift"; sourceTree = "<group>"; };
+		0682413C246FBEB60013CC6B /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		0682413E2470884B0013CC6B /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		069336562471E5EF00B3DC06 /* Extension+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CALayer.swift"; sourceTree = "<group>"; };
+		069336582471EA4100B3DC06 /* TaskContainverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContainverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +80,48 @@
 			children = (
 				068240F0246D2CB70013CC6B /* AppDelegate.swift */,
 				068240F2246D2CB70013CC6B /* SceneDelegate.swift */,
-				068240F4246D2CB70013CC6B /* ViewController.swift */,
+				0682410B246D3CFC0013CC6B /* Views */,
+				06824105246D2FD60013CC6B /* Extensions */,
+				06824104246D2D860013CC6B /* HomeViewController */,
 				068240F6246D2CB70013CC6B /* Main.storyboard */,
 				068240F9246D2CB90013CC6B /* Assets.xcassets */,
 				068240FB246D2CB90013CC6B /* LaunchScreen.storyboard */,
 				068240FE246D2CB90013CC6B /* Info.plist */,
 			);
 			path = Freelance;
+			sourceTree = "<group>";
+		};
+		06824104246D2D860013CC6B /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				068240F4246D2CB70013CC6B /* HomeViewController.swift */,
+				06824136246E803C0013CC6B /* HomeView.swift */,
+				0682413A246E88270013CC6B /* HomeView+Constraints.swift */,
+				0682413E2470884B0013CC6B /* ProjectCell.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		06824105246D2FD60013CC6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06824108246D33CE0013CC6B /* Extension+UIImage.swift */,
+				06824106246D2FE70013CC6B /* Extensions+UIColor.swift */,
+				0682410E246D40A20013CC6B /* Extensions+UIFont.swift */,
+				06824138246E812F0013CC6B /* Extension+UIView.swift */,
+				069336562471E5EF00B3DC06 /* Extension+CALayer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0682410B246D3CFC0013CC6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0682410C246D3D1A0013CC6B /* CircularProgressView.swift */,
+				0682413C246FBEB60013CC6B /* NewTaskView.swift */,
+				069336582471EA4100B3DC06 /* TaskContainverView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +195,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068240F5246D2CB70013CC6B /* ViewController.swift in Sources */,
+				06824109246D33CE0013CC6B /* Extension+UIImage.swift in Sources */,
+				068240F5246D2CB70013CC6B /* HomeViewController.swift in Sources */,
+				069336592471EA4100B3DC06 /* TaskContainverView.swift in Sources */,
 				068240F1246D2CB70013CC6B /* AppDelegate.swift in Sources */,
+				0682410F246D40A20013CC6B /* Extensions+UIFont.swift in Sources */,
+				0682413D246FBEB60013CC6B /* NewTaskView.swift in Sources */,
 				068240F3246D2CB70013CC6B /* SceneDelegate.swift in Sources */,
+				06824137246E803C0013CC6B /* HomeView.swift in Sources */,
+				0682413F2470884B0013CC6B /* ProjectCell.swift in Sources */,
+				0682413B246E88270013CC6B /* HomeView+Constraints.swift in Sources */,
+				0682410D246D3D1A0013CC6B /* CircularProgressView.swift in Sources */,
+				06824107246D2FE70013CC6B /* Extensions+UIColor.swift in Sources */,
+				069336572471E5EF00B3DC06 /* Extension+CALayer.swift in Sources */,
+				06824139246E812F0013CC6B /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
