@@ -12,10 +12,8 @@ class NewTaskView: UIView {
     
     // TODO: Need a button for attatchment, contact, and Enter task name
     
-    let dividerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.FreelanceColor.paragraphGray
-        view.alpha = 0.3
+    let dividerView: DividerView = {
+        let view = DividerView()
         return view
     }()
     
@@ -54,7 +52,7 @@ class NewTaskView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = UIColor.FreelanceColor.background
+        backgroundColor = .white
         
         setSubviewsForAutoLayout([dividerView, stackView, enterTaskButton])
         constraints()

@@ -39,8 +39,7 @@ class TaskCell: UITableViewCell {
     lazy var subtitleStackView: UIStackView = { [unowned self] in
         let stackView = UIStackView(arrangedSubviews: [self.timeLabel, self.projectLabel])
         stackView.axis = .horizontal
-        stackView.distribution = .fill
-        stackView.spacing = 10
+        stackView.distribution = .fillEqually
         return stackView
     }()
     
@@ -48,7 +47,6 @@ class TaskCell: UITableViewCell {
         let stackView = UIStackView(arrangedSubviews: [self.taskTitle, self.subtitleStackView])
         stackView.axis = .vertical
         stackView.distribution = .fill
-        stackView.spacing = 5
         return stackView
     }()
     
@@ -66,6 +64,8 @@ class TaskCell: UITableViewCell {
         
         setSubviewsForAutoLayout([stackView, completionImage])
         setConstraints()
+        
+        selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {

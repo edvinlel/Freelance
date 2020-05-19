@@ -29,6 +29,10 @@
 		069336612471FA6000B3DC06 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336602471FA6000B3DC06 /* Project.swift */; };
 		069336632471FA8800B3DC06 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336622471FA8800B3DC06 /* File.swift */; };
 		069336652471FAAC00B3DC06 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336642471FAAC00B3DC06 /* Contact.swift */; };
+		0693366A247202F400B3DC06 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06933669247202F400B3DC06 /* DividerView.swift */; };
+		0693366C2472034900B3DC06 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693366B2472034900B3DC06 /* ProjectViewController.swift */; };
+		0693366F2472039400B3DC06 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693366E2472039400B3DC06 /* ProjectView.swift */; };
+		069336732472041000B3DC06 /* FileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069336722472041000B3DC06 /* FileCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		069336602471FA6000B3DC06 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		069336622471FA8800B3DC06 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		069336642471FAAC00B3DC06 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		06933669247202F400B3DC06 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		0693366B2472034900B3DC06 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		0693366E2472039400B3DC06 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		069336722472041000B3DC06 /* FileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +98,10 @@
 			children = (
 				068240F0246D2CB70013CC6B /* AppDelegate.swift */,
 				068240F2246D2CB70013CC6B /* SceneDelegate.swift */,
+				06824105246D2FD60013CC6B /* Extensions */,
 				0693365D2471F97700B3DC06 /* Model */,
 				0682410B246D3CFC0013CC6B /* Views */,
-				06824105246D2FD60013CC6B /* Extensions */,
-				06824104246D2D860013CC6B /* HomeViewController */,
+				069336662472028C00B3DC06 /* Controllers */,
 				068240F6246D2CB70013CC6B /* Main.storyboard */,
 				068240F9246D2CB90013CC6B /* Assets.xcassets */,
 				068240FB246D2CB90013CC6B /* LaunchScreen.storyboard */,
@@ -106,8 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				068240F4246D2CB70013CC6B /* HomeViewController.swift */,
-				06824136246E803C0013CC6B /* HomeView.swift */,
-				0682413A246E88270013CC6B /* HomeView+Constraints.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -127,21 +133,14 @@
 		0682410B246D3CFC0013CC6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0693365A2471F39C00B3DC06 /* Cells */,
+				06933667247202A800B3DC06 /* Home */,
+				0693366D2472037E00B3DC06 /* Project */,
 				0682410C246D3D1A0013CC6B /* CircularProgressView.swift */,
 				0682413C246FBEB60013CC6B /* NewTaskView.swift */,
 				069336582471EA4100B3DC06 /* TaskContainverView.swift */,
+				06933669247202F400B3DC06 /* DividerView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		0693365A2471F39C00B3DC06 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				0682413E2470884B0013CC6B /* ProjectCell.swift */,
-				0693365B2471F3BB00B3DC06 /* TaskCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		0693365D2471F97700B3DC06 /* Model */ = {
@@ -153,6 +152,59 @@
 				069336642471FAAC00B3DC06 /* Contact.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		069336662472028C00B3DC06 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				06933670247203C500B3DC06 /* ProjectViewController */,
+				06824104246D2D860013CC6B /* HomeViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		06933667247202A800B3DC06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06933668247202C100B3DC06 /* Cells */,
+				06824136246E803C0013CC6B /* HomeView.swift */,
+				0682413A246E88270013CC6B /* HomeView+Constraints.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		06933668247202C100B3DC06 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0682413E2470884B0013CC6B /* ProjectCell.swift */,
+				0693365B2471F3BB00B3DC06 /* TaskCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0693366D2472037E00B3DC06 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				0693366E2472039400B3DC06 /* ProjectView.swift */,
+				06933671247203F100B3DC06 /* Cell */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		06933670247203C500B3DC06 /* ProjectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0693366B2472034900B3DC06 /* ProjectViewController.swift */,
+			);
+			path = ProjectViewController;
+			sourceTree = "<group>";
+		};
+		06933671247203F100B3DC06 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				069336722472041000B3DC06 /* FileCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,15 +283,19 @@
 				068240F5246D2CB70013CC6B /* HomeViewController.swift in Sources */,
 				069336592471EA4100B3DC06 /* TaskContainverView.swift in Sources */,
 				068240F1246D2CB70013CC6B /* AppDelegate.swift in Sources */,
+				0693366C2472034900B3DC06 /* ProjectViewController.swift in Sources */,
 				0693365C2471F3BB00B3DC06 /* TaskCell.swift in Sources */,
+				069336732472041000B3DC06 /* FileCell.swift in Sources */,
 				0682410F246D40A20013CC6B /* Extensions+UIFont.swift in Sources */,
 				0682413D246FBEB60013CC6B /* NewTaskView.swift in Sources */,
 				069336632471FA8800B3DC06 /* File.swift in Sources */,
 				068240F3246D2CB70013CC6B /* SceneDelegate.swift in Sources */,
 				0693365F2471F98700B3DC06 /* Task.swift in Sources */,
+				0693366F2472039400B3DC06 /* ProjectView.swift in Sources */,
 				06824137246E803C0013CC6B /* HomeView.swift in Sources */,
 				0682413F2470884B0013CC6B /* ProjectCell.swift in Sources */,
 				0682413B246E88270013CC6B /* HomeView+Constraints.swift in Sources */,
+				0693366A247202F400B3DC06 /* DividerView.swift in Sources */,
 				0682410D246D3D1A0013CC6B /* CircularProgressView.swift in Sources */,
 				06824107246D2FE70013CC6B /* Extensions+UIColor.swift in Sources */,
 				069336612471FA6000B3DC06 /* Project.swift in Sources */,

@@ -84,7 +84,6 @@ class ProjectCell: UICollectionViewCell {
         backgroundColor = .white
         layer.cornerRadius = 15
         layer.applySketchShadow(color: .black, alpha: 1, x: 0, y: 2, blur: 14, spread: -6)
-        
     }
     
     required init?(coder: NSCoder) {

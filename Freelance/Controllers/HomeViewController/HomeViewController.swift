@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
         
         self.view = HomeView()
         
+        
         homeView.projectCollectionView.register(ProjectCell.self, forCellWithReuseIdentifier: ProjectCell.identifier)
         homeView.projectCollectionView.delegate = self
         homeView.projectCollectionView.dataSource = self
@@ -27,7 +28,11 @@ class HomeViewController: UIViewController {
         homeView.taskContainerView.taskTableView.dataSource = self
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -43,6 +48,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let viewContoller = ProjectViewController()
+        viewContoller.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Helloooo", style: .plain, target: nil, action: nil)
+        navigationController?.pushViewController(viewContoller, animated: false)
+        
+    }
     
 }
 
